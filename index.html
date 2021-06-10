@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Tiberius Mairura" />
+    <meta
+      name="description"
+      content="This app will encypt and deccrypt Caesar Cipher encryptions"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Caesar Cipher</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Caesar Cipher & Decoder</h1>
+      <div>
+        <textarea
+          name="input"
+          id="input"
+          cols="30"
+          rows="10"
+          placeholder="Enter your text here"
+          required
+        ></textarea>
+      </div>
+      <div id="settings">
+        <button type="submit" id="encrypt">Encrypt</button>
+        <button type="submit" id="decrypt">Decrypt</button>
+        <input
+          type="number"
+          name="level"
+          id="level"
+          min="-255"
+          max="255"
+          value="1"
+          required
+        />
+      </div>
+      <div>
+        <textarea
+          name="output"
+          id="output"
+          cols="30"
+          rows="10"
+          placeholder="The output will be here"
+          required
+        ></textarea>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
