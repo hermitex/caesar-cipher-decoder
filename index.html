@@ -29,8 +29,8 @@
               ></textarea>
             </div>
             <div class="form-control controls">
-              <input type="button" value="Encrypt" />
-              <input type="button" value="Decrypt" />
+              <button id="encrypt">Encrypt</button>
+              <button id="decrypt">Decrypt</button>     
               <input
                 type="number"
                 name="level"
@@ -50,9 +50,11 @@
               id="output"
               cols="30"
               rows="10"
-              placeholder="The output will be here"
-              required
+              placeholder="The output will be here"            
             ></textarea>
+            <div class="form-control controls">  
+              <small>Message has been encrypted</small>          
+            </div>
           </form>
         </div>
       </div>
