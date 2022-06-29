@@ -72,3 +72,17 @@ border-radius: 5px;
 text-align: center;
 padding: 0.1rem;
 }
+
+
+@media screen and (max-width: 768px) {
+.inner-container{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+body{
+  overflow-y: scroll;
+}
+}
+  
