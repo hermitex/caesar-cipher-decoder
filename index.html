@@ -9,46 +9,54 @@
       content="This app will encypt and deccrypt Caesar Cipher encryptions"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Caesar Cipher</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="container">
       <h1>Caesar Cipher</h1>
-      <div>
-        <textarea
-          name="input"
-          id="input"
-          cols="30"
-          rows="10"
-          placeholder="Enter your text here"
-          required
-        ></textarea>
-      </div>
-      <div id="settings">
-        <button type="submit" id="encrypt">Encrypt</button>
-        <button type="submit" id="decrypt">Decrypt</button>
-        <input
-          type="number"
-          name="level"
-          id="level"
-          min="-255"
-          max="255"
-          value="1"
-          required
-        />
-      </div>
-      <div>
-        <textarea
-          name="output"
-          id="output"
-          cols="30"
-          rows="10"
-          placeholder="The output will be here"
-          required
-        ></textarea>
+      <div class="inner-container">
+        <div class="left">
+          <form action="">
+            <div class="form-control">
+              <textarea
+                name="input"
+                id="input"
+                cols="30"
+                rows="10"
+                placeholder="Enter your text here"
+                required
+              ></textarea>
+            </div>
+            <div class="form-control controls">
+              <input type="button" value="Encrypt" />
+              <input type="button" value="Decrypt" />
+              <input
+                type="number"
+                name="level"
+                id="level"
+                min="-255"
+                max="255"
+                value="1"
+                required
+              />
+            </div>
+          </form>
+        </div>
+        <div class="right">
+          <form action="">
+            <textarea
+              name="output"
+              id="output"
+              cols="30"
+              rows="10"
+              placeholder="The output will be here"
+              required
+            ></textarea>
+          </form>
+        </div>
       </div>
     </div>
-    <script src="./app.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
