@@ -75,11 +75,17 @@ small#notification {
 }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    display: none;
+  }
+  .container {
+    gap: 0.5rem;
+  }
   .inner-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
- 
+    gap: 0.5rem;
   }
 
   .inner-container .left {
@@ -89,7 +95,7 @@ small#notification {
     min-height: 50vh;
     background-color: #fff;
   }
-  
+
   .inner-container .right {
     border-radius: 5px;
     border: 1px solid yellow;
@@ -97,7 +103,7 @@ small#notification {
     min-height: 40vh;
     background-color: #fff;
   }
-  
+
   textarea {
     min-width: 35vw;
     max-width: 35vw;
